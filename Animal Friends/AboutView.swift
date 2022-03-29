@@ -9,7 +9,15 @@ import SwiftUI
 
 struct AboutView: View {
     var body: some View {
-        Text("AboutView")
+        ScrollView {
+            VStack {
+                Text("About")
+                    .font(.system(size: 40))
+                Text("...")
+                    .font(.system(size: 20))
+                    .scaledToFit()
+            }
+        }
     }
 }
 
